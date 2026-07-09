@@ -1,2 +1,2 @@
 # coding-stuff
-fun things i make
+annoying coding stuff as a starter
