@@ -1,0 +1,136 @@
+html, body {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+}
+
+.bombei {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(8, 8, 8);
+    height: 100%;
+}
+
+.holder {
+    border: 5px solid red;
+    animation: colorShift 4s linear infinite, shadowShift2 4s linear infinite;
+    border-radius: 20px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 250px;
+    box-shadow: 6px 6px 10px rgb(160, 76, 76);
+}
+@keyframes shadowShift2{
+    0% {box-shadow: 6px 6px 10px color(160, 76, 76);}
+    25% {box-shadow: 6px 6px 10px rgb(163, 163, 79)};
+    50% {box-shadow: 6px 6px 10px rgb(58, 124, 58) ;}
+    75% {box-shadow: 6px 6px 10px rgb(58, 58, 133);}
+    100% {box-shadow: 6px 6px 10px color(160, 76, 76);}
+}
+
+@keyframes colorShift {
+    0%   { border-color: red; }
+    25%  { border-color: yellow; }
+    50%  { border-color: lime; }
+    75%  { border-color: blue; }
+    100% { border-color: red; }
+}
+    @keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-3deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+    }
+
+.selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 4px 4px 5px rgb(49, 49, 49);
+}
+
+.butt1 {
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    box-shadow: 4px 4px 5px rgb(39, 38, 38);
+}
+
+.butt1:active {
+    background-color: rgb(233, 233, 233);
+}
+
+.dies {
+    margin: 10px;
+    text-align: center;
+}
+.butt1:hover {
+    animation: wiggle 1.8s ease-in-out infinite;
+}
+
+.top1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid red;
+    animation: colorShift 4s linear infinite, shadowShift 4s linear infinite;
+    position: fixed;
+    top: 10px;
+    background-color: rgb(142, 142, 143);
+    width:1500px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgb(160, 76, 76);
+    
+}
+@keyframes shadowShift{
+    0% {box-shadow: 4px 4px 6px color(160, 76, 76);}
+    25% {box-shadow: 4px 4px 6px rgb(163, 163, 79)};
+    50% {box-shadow: 4px 4px 6px rgb(58, 124, 58) ;}
+    75% {box-shadow: 4px 4px 6px rgb(58, 58, 133);}
+    100% {box-shadow: 4px 4px 6px color(160, 76, 76);}
+}
+
+@keyframes colorShift {
+    0%   { border-color: red; }
+    25%  { border-color: yellow; }
+    50%  { border-color: lime; }
+    75%  { border-color: blue; }
+    100% { border-color: red; }
+}
+
+
+.icon {
+    width: 100px;
+    height: 100px;
+    animation: diceMove 6.8s ease-in-out infinite;
+}
+    @keyframes diceMove {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-8deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(8deg); }
+    100% { transform: rotate(0deg); }
+    }
+#img01 {
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+}
+
