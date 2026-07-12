@@ -1,2 +1,2 @@
 # coding-stuff
-annoying coding stuff as a starter
+chuki is a dice roller (work in progress)
